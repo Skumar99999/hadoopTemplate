@@ -2,13 +2,9 @@
 
 ## Team members' names 
 
-1. Student Name:
+1. Student Name: Sugandha Kumar
 
-   Student UT EID:
-
-2. Student Name:
-
-   Student UT EID:
+   Student UT EID: sk49967
 
  ...
 
