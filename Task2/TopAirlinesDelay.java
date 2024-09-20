@@ -14,9 +14,9 @@ public class TopAirlinesDelay {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "airline delay ratio");
         job.setJarByClass(TopAirlinesDelay.class);
-        job.setMapperClass(AirlineDelayMapper.class);
-        job.setCombinerClass(AirlineDelayReducer.class);
-        job.setReducerClass(AirlineDelayReducer.class);
+        job.setMapperClass(MapperTwo.class);
+        job.setCombinerClass(ReducerTwo.class);
+        job.setReducerClass(ReducerTwo.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(DelayCountWritable.class);
 

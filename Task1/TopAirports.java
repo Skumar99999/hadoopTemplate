@@ -15,9 +15,9 @@ public class TopAirports {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "top airports");
         job.setJarByClass(TopAirports.class);
-        job.setMapperClass(AirportMapper.class);
-        job.setCombinerClass(AirportReducer.class);
-        job.setReducerClass(AirportReducer.class);
+        job.setMapperClass(MapperOne.class);
+        job.setCombinerClass(ReducerOne.class);
+        job.setReducerClass(ReducerOne.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
